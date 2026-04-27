@@ -18,7 +18,7 @@ export default function App() {
   const [selectedMetric, setSelectedMetric] = useState("sales");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/data")
+    fetch("https://b100.onrender.com/data")
       .then((res) => res.json())
       .then((d) => setData(d))
       .catch(() => {
